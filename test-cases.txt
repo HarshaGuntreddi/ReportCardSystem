@@ -1,0 +1,30 @@
+{
+    "name": "Harsha",
+    "subjectScores": {
+        "Term1": {
+            "Physics": 78.0,
+            "Chemistry": 72.0,
+            "Biology": 80.0,
+            "English": 82.0
+        },
+        "Term2": {
+            "Physics": 88.0,
+            "Chemistry": 82.0,
+            "Biology": 86.0,
+            "English": 84.0
+        }
+    }
+}
+
+
+
+{
+    "name": "Sureshsir",
+    "subjectScores": {
+        "Term1": {
+            "Physics": 90.0,
+            "Chemistry": 85.0,
+            "English": 88.0
+        }
+    }
+}
