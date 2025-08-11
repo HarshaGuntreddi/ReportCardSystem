@@ -28,7 +28,7 @@ public class ReportCardService {
             termScores.put("Science", scienceScore);
 
             // English weighted calculation (direct pass-through from example)
-            double englishScore = calculateTermScore(termScores.get("English"), term);
+            double englishScore = calculateTermScore(termScores.get("English"));
             termScores.put("English", englishScore);
         }
 
@@ -47,13 +47,9 @@ public class ReportCardService {
         return (0.4 * physics) + (0.3 * chemistry) + (0.3 * biology);
     }
 
-    private double calculateTermScore(Double examScore, String term) {
+    private double calculateTermScore(Double examScore) {
         // Example weights: Exam1 (10%), Exam2 (10%), Exam3 (80%)
-        if (term.contains("Term1")) {
-            return (0.1 * examScore) + (0.1 * examScore) + (0.8 * examScore); // Simplified for single input
-        } else {
-            return (0.1 * examScore) + (0.1 * examScore) + (0.8 * examScore);
-        }
+        return examScore;
     }
 
     private double calculateFinalScore(Map<String, Map<String, Double>> subjectScores, String subject) {
